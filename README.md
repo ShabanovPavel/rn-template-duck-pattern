@@ -20,3 +20,7 @@ next step:
 and:
 
         react-native link  
+
+Add this folder to the project and register it in ./index.js:
+
+        import App from './src';
