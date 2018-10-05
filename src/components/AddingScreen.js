@@ -7,7 +7,7 @@ import {
   Keyboard,
 } from "react-native";
 import { Field, reduxForm } from "redux-form";
-import { wrapTextInput } from "./shereComponents/wrapers";
+import { wrapTextInput } from "./otherComponents/wrapers";
 
 // ----------------------------Проверка на валидность---------------------
 const requiredText = value =>
