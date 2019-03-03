@@ -8,3 +8,5 @@ then commands:
 yarn android
 or
 yarn ios
+
+rename project for android app/src/res/values/string.xml
