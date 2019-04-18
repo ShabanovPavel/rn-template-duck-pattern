@@ -3,10 +3,18 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "updateApp": "yarn && cd ios && pod install && cd ..",
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "ios": "react-native run-ios",
+    "test": "jest",
     "android": "react-native run-android",
-    "test": "jest"
+    "ios5": "react-native run-ios --simulator='iPhone 5s'",
+    "iosX": "react-native run-ios --simulator='iPhone X'",
+    "iosXs": "react-native run-ios --simulator='iPhone XS'",
+    "ios": "react-native run-ios",
+    "build-android": "cd ./android && ./gradlew app:assembleRelease",
+    "build-ios": "react-native run-ios --configuration Release",
+    "doc": "jsdoc -p -r ./src/ && jsdoc -r ./src/",
+    "eslint": "yarn add eslint && yarn add prettier && yarn add eslint-config-airbnb && yarn add eslint-config-prettier && yarn add eslint-plugin-import && yarn add eslint-plugin-jsx-a11y && yarn add eslint-plugin-prettier && yarn add eslint-plugin-react"
   },
   "dependencies": {
     "react": "16.6.3",
